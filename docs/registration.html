@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/Styles/myStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar" id="theTop">
+            <ul class="ul_nav">
+                <li class="li_nav"><a href="../index.html">Home</a></li>
+                <li class="li_nav"> <a href="roadmap.html">Road Map</a></li>
+                <li class="li_nav"><a href="registration.html">Registeration Form</a></li>
+                <li class="li_nav"><a href="https://www.iti.gov.eg/">Contact</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img class="iti_logo" src="../assets/images/ITI_logo.png" alt="">
+        </div>
+    </header>
+
+    <article class="The_form">
+        <form action="/backend.php" method="post">
+            <p class="title">Register-Create Account</p>
+            <p class="imp_txt">Field marked with <span class="red">*</span> are compulsory fields</p>
+            <table>
+                <tr>
+                    <td class="label_color"> <label><span class="red">*</span>Your Name
+                        </label></td>
+                    <td> <input class="label_width" type="text" id="name" name="name">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label_color"> <label><span class="red">*</span>E-mail ID
+                        </label></td>
+                    <td> <input class="label_width" type="email" id="email" name="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label_color"> <label>Alternate E-mail ID
+                        </label></td>
+                    <td colspan="3"> <input class="label_width" type="email" id="a_email" name="a_email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" class="label_color"> <label>your Phone
+                    </td>
+                    <td colspan="3">
+                        <span class="num_span">Country-Code</span>
+                        <span class="num_span">-</span>
+                        <span class="num_span">City-Code</span>
+                        <span class="num_span">-</span>
+                        <span class="num_span">phone Number</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="number" id="countryCode" name="countryCode" min="1" max="5">
+                        <span>-</span>
+                        <input type="number" id="cityCode" name="cityCode" min="1" max="5">
+                        <span>-</span>
+                        <input type="number" id="Phone_number" name="Phone_number" min="1" max="5">
+                    </td>
+                </tr>
+
+            
+                <tr>
+                    <td class="label_color"> <label>Mobile Phone
+                        </label></td>
+                    <td> <input class="label_width" type="number" id="mobile_num" name="mobile_num">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label_color"> <label><span class="red">*</span>your Postal Address
+                        </label></td>
+                    <td> <textarea class="label_width" id="w3review" name="w3review" rows="4" cols="20">
+                    </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label_color">
+                        <label>*Country</label>
+                    </td>
+                    <td>
+                        <select name="country">
+                            <option value="select" selected disabled>-----------------Select-----------------</option>
+                            <option value="cairo">cairo</option>
+                            <option value="brazil">brazil</option>
+                            <option value="qatar">Qatar</option>
+                            <option value="bahrain">Bahrain</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label_color">
+                        <label><span class="red">*</span>Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label_color">
+                        <label><span class="red">*</span>Re - Enter Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="checkAgree" value="" />I accept the <u>Terms of Use</u>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" name="submit" value="continue >>" />
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+    <footer>
+        <p>Copyright 2022 by Noha Salah &reg;. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
